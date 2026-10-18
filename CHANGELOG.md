@@ -3,6 +3,11 @@
 All notable changes. This project follows [Semantic Versioning](https://semver.org/);
 versions before 1.0 may change behaviour and settings.
 
+## [0.1.0-alpha.2] — 2026-10-18
+
+### Fixed
+- DIRECT no longer takes the Mac's built-in speakers or headphone jack exclusively, which could freeze the app (spinning wheel). DIRECT still bypasses the equalizer and ReplayGain there; the BIT-PERFECT lamp stays off on built-in outputs.
+
 ## [0.1.0-alpha.1] — 2026-10-18
 
 First public alpha.
