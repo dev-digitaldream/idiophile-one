@@ -636,14 +636,14 @@ final class PlayerEngine {
         guard on != isDirect else { return }
         isDirect = on
         if on {
-            if chosenDevice == nil, let device = outputDevice {
+            if chosenDevice == nil, let device = outputDevice, !device.isBuiltIn {
                 // Taking the system output exclusively makes macOS switch its default to
                 // another device: stay on this one.
                 chosenDevice = device
                 pinnedForDirect = true
                 bindEngine(to: device)
             }
-            if let device = outputDevice, device.setExclusive(true), device.isExclusive {
+            if let device = outputDevice, !device.isBuiltIn, device.setExclusive(true), device.isExclusive {
                 hoggedDevice = device
                 isExclusive = true
             }
@@ -689,7 +689,7 @@ final class PlayerEngine {
             AudioUnitSetProperty(unit, kAudioOutputUnitProperty_CurrentDevice, kAudioUnitScope_Global, 0,
                                  &deviceID, UInt32(MemoryLayout<AudioDeviceID>.size))
         }
-        if isDirect, let now = outputDevice, now.setExclusive(true) {
+        if isDirect, let now = outputDevice, !now.isBuiltIn, now.setExclusive(true) {
             hoggedDevice = now
             isExclusive = true
         }

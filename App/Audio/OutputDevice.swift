@@ -215,6 +215,16 @@ struct OutputDevice: Identifiable, Hashable {
 
     var isExclusive: Bool { hogOwner == getpid() }
 
+    /// The Mac's own speakers or headphone jack: macOS processes their signal and hanging on to
+    /// them exclusively can stall the audio server, so DIRECT never takes them.
+    var isBuiltIn: Bool {
+        var type: UInt32 = 0
+        var size = UInt32(MemoryLayout<UInt32>.size)
+        var address = Self.address(kAudioDevicePropertyTransportType)
+        AudioObjectGetPropertyData(id, &address, 0, nil, &size, &type)
+        return type == kAudioDeviceTransportTypeBuiltIn
+    }
+
     private var hogOwner: pid_t {
         var owner: pid_t = -1
         var size = UInt32(MemoryLayout<pid_t>.size)
