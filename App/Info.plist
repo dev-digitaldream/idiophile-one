@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Internet radio: many stations stream over plain HTTP or older TLS. The exception is
+	     limited to media loaded by AVFoundation; other network requests keep ATS. -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoadsInMedia</key>
+		<true/>
+		<!-- DLNA servers on the local network speak plain HTTP. -->
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+		<!-- Media servers reached through Tailscale MagicDNS names. -->
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>ts.net</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Idiophile One finds the music servers (UPnP / DLNA) on your network, such as a NAS, and plays their files.</string>
+</dict>
+</plist>

@@ -1,0 +1,19 @@
+
+# XcodeGen output
+*.xcuserstate
+.DS_Store
+.build/
+DerivedData/
+IdiophileOne.xcodeproj/
+build/
+xcuserdata/
+
+# Promo media: large renders, captures and the soundtrack
+/media/*
+!/media/short/
+/media/short/*
+!/media/short/render.py
+dist/
+
+# Internal notes (owner, hardware, competitor study): kept out of the public repository
+/docs/private/
