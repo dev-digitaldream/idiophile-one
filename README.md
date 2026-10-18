@@ -92,6 +92,12 @@ The [user guide](docs/USER-GUIDE.md) shows every part of the app with its menus 
 3. DSD (DoP), convolution / room correction, crossfeed.
 4. Smart playlists, tag editing.
 5. Interactive EQ curve (drag the filters).
+6. **Streaming services, through their official programs only.** Idiophile One will apply for
+   official developer / partner access with **Qobuz** and **Tidal**, the two services that deliver
+   lossless FLAC and can stay bit-perfect, and will use no unofficial or reverse-engineered access.
+   Availability depends on their agreement and terms. Until then, their catalogues can already be
+   browsed through any DLNA / UPnP gateway you run yourself. Services that give third-party apps
+   no access to the audio signal (Deezer, Spotify, Apple Music) are not planned.
 
 ## Licence
 

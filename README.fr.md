@@ -89,6 +89,13 @@ Le [guide d'utilisation](docs/USER-GUIDE.fr.md) montre chaque partie de l'app av
 3. DSD (DoP), convolution / correction de pièce, crossfeed.
 4. Listes intelligentes, édition des tags.
 5. Courbe d'égaliseur interactive.
+6. **Services de streaming, uniquement par leurs programmes officiels.** Idiophile One demandera un
+   accès développeur / partenaire officiel à **Qobuz** et **Tidal**, les deux services qui livrent du
+   FLAC sans perte et peuvent rester bit-perfect, et n'utilisera aucun accès non officiel ni
+   rétro-ingénierie. La disponibilité dépend de leur accord et de leurs conditions. D'ici là, leurs
+   catalogues restent consultables via une passerelle DLNA / UPnP que vous faites tourner vous-même. Les
+   services qui ne donnent pas accès au signal audio aux apps tierces (Deezer, Spotify, Apple Music)
+   ne sont pas prévus.
 
 ## Licence
 
