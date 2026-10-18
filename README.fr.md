@@ -78,6 +78,7 @@ Le [guide d'utilisation](docs/USER-GUIDE.fr.md) montre chaque partie de l'app av
 ## Documentation
 
 - [Guide d'utilisation](docs/USER-GUIDE.fr.md) · [User guide](docs/USER-GUIDE.md)
+- [Article de blog, en anglais](https://blog.digitaldream.work/blog/idiophile-one-vintage-mac-en/)
 - [Compiler depuis les sources](docs/BUILDING.md) (en anglais)
 - [Architecture](docs/ARCHITECTURE.md) (en anglais)
 - [Contribuer](CONTRIBUTING.md) · [Sécurité](SECURITY.md) · [Crédits](CREDITS.md)

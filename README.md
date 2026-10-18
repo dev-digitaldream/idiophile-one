@@ -81,6 +81,7 @@ The [user guide](docs/USER-GUIDE.md) shows every part of the app with its menus 
 ## Documentation
 
 - [User guide](docs/USER-GUIDE.md) · [Guide d'utilisation](docs/USER-GUIDE.fr.md) (the same text as Help › Idiophile One Help)
+- [Blog post: why and how it was built](https://blog.digitaldream.work/blog/idiophile-one-vintage-mac-en/)
 - [Building from source](docs/BUILDING.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Credits](CREDITS.md)
